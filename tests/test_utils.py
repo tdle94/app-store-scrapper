@@ -1,5 +1,5 @@
 import unittest
 
-from app_store_crawler import constant
-from app_store_crawler.scrapper import  AppStoreCrawler
+from lib import constant
+from lib.scrapper import AppStoreCrawler
 

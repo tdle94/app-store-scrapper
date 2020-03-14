@@ -1,5 +1,5 @@
-from app_store_crawler import utils
-from app_store_crawler.constant import markets
+from lib import utils
+from lib.constant import markets
 
 class AppStoreCrawler(object):
     def __init__(self):

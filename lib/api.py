@@ -1,4 +1,4 @@
-from app_store_crawler import scrapper
+from lib import scrapper
 
 def details(app_id):
     s = scrapper.AppStoreScrapper()

@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Yjj6PhcTV0rUESvALwIqV3wQxt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -186,10 +189,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="617" y="110" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1583871244088" />
-    <state x="517" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584137208181">
+    <state x="517" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584196282757">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584137208181" />
+    <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584196282757" />
     <state x="572" y="247" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583604299024">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

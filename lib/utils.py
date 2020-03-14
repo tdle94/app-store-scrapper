@@ -1,4 +1,4 @@
-from app_store_crawler import constant as c
+from lib import constant as c
 import json
 import bs4
 import re

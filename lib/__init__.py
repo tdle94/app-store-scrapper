@@ -4,7 +4,7 @@ App Store Scraper
 A web scraper for IOS app store.
 """
 
-from app_store_crawler.api import (
+from lib.api import (
     details,
     search,
     suggest,
