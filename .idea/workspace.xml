@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9822e46-f70b-4080-bcaa-54bdd7716f97" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yjj6PhcTV0rUESvALwIqV3wQxt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_store_crawler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for test_crawler.DeveloperTest">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_store_crawler" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_store_crawler/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.DeveloperTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DeveloperTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.DeveloperTest.test_app_with_invalid_country" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DeveloperTest.test_app_with_invalid_country&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.DeveloperTest.test_apps_with_dev_id" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DeveloperTest.test_apps_with_dev_id&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.SearchTermTest.test_term_with_string" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SearchTermTest.test_term_with_string&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.SimilarTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SimilarTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.api" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SimilarTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest.test_term_with_string" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest.test_apps_with_dev_id" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest.test_app_with_invalid_country" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest.test_app_with_invalid_country" />
+        <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest.test_apps_with_dev_id" />
+        <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest.test_term_with_string" />
+        <item itemvalue="Python tests.Unittests for test_crawler.SimilarTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9822e46-f70b-4080-bcaa-54bdd7716f97" name="Default Changelist" comment="" />
+      <created>1583462721768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583462721768</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="510" y="182" key="#Inspections" timestamp="1583465133844">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="510" y="182" key="#Inspections/0.23.1680.1027@0.23.1680.1027" timestamp="1583465133844" />
+    <state x="474" y="198" key="#Unittests_for_test_crawler.ReviewTest.test_most_recent_from_dz_market" timestamp="1583723110812">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="474" y="198" key="#Unittests_for_test_crawler.ReviewTest.test_most_recent_from_dz_market/0.23.1680.1027@0.23.1680.1027" timestamp="1583723110812" />
+    <state x="374" y="178" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583515296488">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="374" y="178" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583515296488" />
+    <state width="1379" height="165" key="GridCell.Tab.0.bottom" timestamp="1584156875306">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1379" height="165" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
+    <state width="1379" height="165" key="GridCell.Tab.0.center" timestamp="1584156875306">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1379" height="165" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
+    <state width="1379" height="165" key="GridCell.Tab.0.left" timestamp="1584156875306">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1379" height="165" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
+    <state width="1379" height="165" key="GridCell.Tab.0.right" timestamp="1584156875306">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1379" height="165" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
+    <state x="617" y="110" key="SettingsEditor" timestamp="1583871244088">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="617" y="110" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1583871244088" />
+    <state x="517" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584137208181">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584137208181" />
+    <state x="572" y="247" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583604299024">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="572" y="247" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1583604299024" />
+    <state x="444" y="274" width="670" height="676" key="search.everywhere.popup" timestamp="1583802263949">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="444" y="274" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1583802263949" />
+  </component>
+</project>
