@@ -234,7 +234,7 @@
       <recent name="$PROJECT_DIR$/app_store_crawler" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_utils.UnitTest">
+  <component name="RunManager" selected="Python tests.Unittests for test_crawler.ReviewTest">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="appstorecrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,7 +256,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_crawler.RatingTest.test_rating_with_id" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_crawler.DeveloperTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="appstorecrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,11 +266,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_crawler.RatingTest.test_rating_with_id&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DeveloperTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_crawler.ReviewTest.test_most_recent_with_id" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_crawler.RatingTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="appstorecrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,7 +280,35 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_crawler.ReviewTest.test_most_recent_with_id&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.RatingTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.ReviewTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.ReviewTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.SearchTermTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="appstorecrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SearchTermTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -312,7 +340,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_utils.UnitTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_crawler.SuggestTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="appstorecrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,35 +350,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.UnitTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_utils.UnitTest.test_parse_app_rating" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="appstorecrawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.UnitTest.test_parse_app_rating&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_utils.UnitTest.test_parse_app_review" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="appstorecrawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.UnitTest.test_parse_app_review&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SuggestTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -358,19 +358,19 @@
       <item itemvalue="Python.api" />
       <item itemvalue="Python tests.Unittests for test_crawler.SimilarTest" />
       <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest.test_term_with_string" />
-      <item itemvalue="Python tests.Unittests for test_crawler.RatingTest.test_rating_with_id" />
-      <item itemvalue="Python tests.Unittests for test_utils.UnitTest.test_parse_app_rating" />
-      <item itemvalue="Python tests.Unittests for test_crawler.ReviewTest.test_most_recent_with_id" />
-      <item itemvalue="Python tests.Unittests for test_utils.UnitTest.test_parse_app_review" />
-      <item itemvalue="Python tests.Unittests for test_utils.UnitTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SuggestTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.RatingTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.ReviewTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_utils.UnitTest" />
-        <item itemvalue="Python tests.Unittests for test_utils.UnitTest.test_parse_app_review" />
-        <item itemvalue="Python tests.Unittests for test_crawler.ReviewTest.test_most_recent_with_id" />
-        <item itemvalue="Python tests.Unittests for test_utils.UnitTest.test_parse_app_rating" />
-        <item itemvalue="Python tests.Unittests for test_crawler.RatingTest.test_rating_with_id" />
+        <item itemvalue="Python tests.Unittests for test_crawler.ReviewTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.RatingTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.SuggestTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -395,6 +395,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="510" y="182" key="#Inspections/0.23.1680.1027@0.23.1680.1027" timestamp="1583465133844" />
+    <state x="407" y="181" key="#Notifications" timestamp="1585014559692">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="407" y="181" key="#Notifications/0.23.1680.947@0.23.1680.947" timestamp="1585014559692" />
     <state x="474" y="198" key="#Unittests_for_test_crawler.ReviewTest.test_most_recent_from_dz_market" timestamp="1583723110812">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -411,36 +415,36 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="550" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.947@0.23.1680.947" timestamp="1585006327433" />
-    <state width="1400" height="178" key="GridCell.Tab.0.bottom" timestamp="1585011475219">
+    <state width="1379" height="356" key="GridCell.Tab.0.bottom" timestamp="1585015696051">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1400" height="178" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585011475219" />
-    <state width="1400" height="178" key="GridCell.Tab.0.center" timestamp="1585011475219">
+    <state width="1379" height="356" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585015696051" />
+    <state width="1379" height="356" key="GridCell.Tab.0.center" timestamp="1585015696050">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1400" height="178" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585011475219" />
-    <state width="1400" height="178" key="GridCell.Tab.0.left" timestamp="1585011475218">
+    <state width="1379" height="356" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585015696050" />
+    <state width="1379" height="356" key="GridCell.Tab.0.left" timestamp="1585015696050">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1400" height="178" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585011475218" />
-    <state width="1400" height="178" key="GridCell.Tab.0.right" timestamp="1585011475219">
+    <state width="1379" height="356" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585015696050" />
+    <state width="1379" height="356" key="GridCell.Tab.0.right" timestamp="1585015696050">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1400" height="178" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585011475219" />
+    <state width="1379" height="356" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585015696050" />
     <state x="514" y="248" key="SettingsEditor" timestamp="1584993232623">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="617" y="110" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1583871244088" />
     <state x="514" y="248" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584993232623" />
-    <state x="517" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1584992458949">
+    <state x="517" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585013737392">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584196282757" />
-    <state x="517" y="342" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1584992458949" />
+    <state x="517" y="342" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1585013737392" />
     <state x="572" y="247" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583604299024">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

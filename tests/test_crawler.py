@@ -179,7 +179,7 @@ class SuggestTest(CrawlerTestBase):
             self.assertFalse(terms)
 
     def test_non_exist_term(self):
-        terms = self.s.suggest('fuckinghell')
+        terms = self.s.suggest('fuckinghell', 'us', 'en-us')
         self.assertFalse(terms)
 
     def test_suggest_with_string(self):
@@ -202,67 +202,67 @@ class CollectionTest(CrawlerTestBase):
     def test_with_us_market(self):
         app_data = []
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'us')
+            app_data = self.s.collection('topmacapps', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'us')
+            app_data = self.s.collection('topfreemacapps', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'us')
+            app_data = self.s.collection('topgrossingmacapps', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'us')
+            app_data = self.s.collection('toppaidmacapps', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'us')
+            app_data = self.s.collection('newapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'us')
+            app_data = self.s.collection('newfreeapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'us')
+            app_data = self.s.collection('newpaidapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'us')
+            app_data = self.s.collection('topfreeapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'us')
+            app_data = self.s.collection('topfreeipadapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'us')
+            app_data = self.s.collection('topgrossingapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'us')
+            app_data = self.s.collection('topgrossingipadapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'us')
+            app_data = self.s.collection('toppaidapplications', category, 'us', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'us')
+            app_data = self.s.collection('toppaidipadapplications', category, 'us', 50)
 
         self.verify(app_data)
 
@@ -270,134 +270,134 @@ class CollectionTest(CrawlerTestBase):
         app_data = []
 
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'ao')
+            app_data = self.s.collection('topmacapps', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'ao')
+            app_data = self.s.collection('topfreemacapps', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'ao')
+            app_data = self.s.collection('topgrossingmacapps', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'ao')
+            app_data = self.s.collection('toppaidmacapps', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'ao')
+            app_data = self.s.collection('newapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'ao')
+            app_data = self.s.collection('newfreeapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'ao')
+            app_data = self.s.collection('newpaidapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'ao')
+            app_data = self.s.collection('topfreeapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'ao')
+            app_data = self.s.collection('topfreeipadapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'ao')
+            app_data = self.s.collection('topgrossingapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'ao')
+            app_data = self.s.collection('topgrossingipadapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'ao')
+            app_data = self.s.collection('toppaidapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'ao')
+            app_data = self.s.collection('toppaidipadapplications', category, 'ao', 50)
 
         self.verify(app_data)
 
     def test_with_ai_market(self):
         app_data = []
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'ai')
+            app_data = self.s.collection('topmacapps', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'ai')
+            app_data = self.s.collection('topfreemacapps', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'ai')
+            app_data = self.s.collection('topgrossingmacapps', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'ai')
+            app_data = self.s.collection('toppaidmacapps', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'ai')
+            app_data = self.s.collection('newapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'ai')
+            app_data = self.s.collection('newfreeapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'ai')
+            app_data = self.s.collection('newpaidapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'ai')
+            app_data = self.s.collection('topfreeapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'ai')
+            app_data = self.s.collection('topfreeipadapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'ai')
+            app_data = self.s.collection('topgrossingapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'ai')
+            app_data = self.s.collection('topgrossingipadapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'ai')
+            app_data = self.s.collection('toppaidapplications', category, 'ai', 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'ai')
+            app_data = self.s.collection('toppaidipadapplications', category, 'ai', 50)
 
         self.verify(app_data)
 

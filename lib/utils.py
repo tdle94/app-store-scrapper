@@ -144,7 +144,12 @@ def get_app_collection_ids(result):
 
 def get_app_similar_ids(result):
     html = bs4.BeautifulSoup(result, features='html.parser')
-    data = html.find_all('script')[2].string.split('its.serverData=')[1]
+    scripts = html.find_all('script')
+
+    if not scripts and len(scripts) < 3:
+        return []
+
+    data = scripts[2].string.split('its.serverData=')[1]
     ids = json.loads(data).get('pageData').get('softwarePageData').get('customersAlsoBoughtApps')
 
     return ids
@@ -178,6 +183,8 @@ def parse_app_review(result):
         return []
 
     for entry in entries:
+        if entry is not dict:
+            continue
         reviews.append({
             'id': result.get('id').get('label'),
             'userName': result.get('author').get('name').get('label'),
