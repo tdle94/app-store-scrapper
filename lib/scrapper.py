@@ -1,6 +1,7 @@
 from lib import utils
 from lib.constant import markets
 
+
 class AppStoreCrawler(object):
     def __init__(self):
         super().__init__()
@@ -14,7 +15,6 @@ class AppStoreCrawler(object):
 
     def developers(self, dev_id, country='us'):
         return self.details(dev_id, country)
-
 
     def search(self, query, limit=1, country='us', lang='en-us'):
         url = utils.build_search_url(query)

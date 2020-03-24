@@ -7,6 +7,7 @@ import logging
 
 log = logging.getLogger(__name__)
 
+
 def build_detail_url(app_id, country, id_field='id'):
     return '{url}?{id_field}={id}&country={country}&entity=software'.format(url=c.ID_URL, id=app_id, country=country, id_field=id_field)
 
@@ -72,8 +73,10 @@ def construct_app_detail_dict(result):
         'supportedDevices': result.get('supportedDevices'),
     }
 
+
 def determine_id_field(app_id):
     return 'bundleId' if isinstance(app_id, str) and re.search('\w+\.\w+\.\w+\.\w+', app_id) else 'id'
+
 
 def parse_app_detail(result):
     try:
@@ -87,6 +90,7 @@ def parse_app_detail(result):
         return []
 
     return apps_detail
+
 
 def get_ids_from_search_term(html, limit):
     try:
@@ -104,6 +108,7 @@ def get_ids_from_search_term(html, limit):
         log.error(e)
         return ''
 
+
 def parse_app_suggest(result):
     xml = bs4.BeautifulSoup(result, features='html.parser')
     dicts = iter(xml.findAll('dict'))
@@ -113,7 +118,7 @@ def parse_app_suggest(result):
 
     for dictionary in dicts:
         string_tags = dictionary.findChildren('string')
-        if len(string_tags ) > 0:
+        if len(string_tags) > 0:
             terms.append(string_tags[0].text)
 
     return terms
@@ -139,12 +144,9 @@ def get_app_collection_ids(result):
 
 def get_app_similar_ids(result):
     html = bs4.BeautifulSoup(result, features='html.parser')
-    a_tags = html.findAll('a', {'class': 'we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view'})
-    ids = []
-    for a in a_tags:
-        string = a.attrs.get('data-metrics-click')
-        dictionary = json.loads(string)
-        ids.append(dictionary.get('targetId'))
+    data = html.find_all('script')[2].string.split('its.serverData=')[1]
+    ids = json.loads(data).get('pageData').get('softwarePageData').get('customersAlsoBoughtApps')
+
     return ids
 
 
@@ -176,8 +178,6 @@ def parse_app_review(result):
         return []
 
     for entry in entries:
-        if entry is not list:
-            continue
         reviews.append({
             'id': result.get('id').get('label'),
             'userName': result.get('author').get('name').get('label'),
@@ -190,6 +190,7 @@ def parse_app_review(result):
         })
 
     return reviews
+
 
 def request(url, method, headers=None):
     if headers is None:

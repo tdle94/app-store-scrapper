@@ -1,29 +1,29 @@
 from lib import scrapper
 
+
 def details(app_id):
-    s = scrapper.AppStoreScrapper()
-    return s.details(app_id)
+    return scrapper.AppStoreCrawler().details(app_id=app_id)
+
 
 def search(query):
-    s = scrapper.AppStoreScrapper()
-    return s.search(query)
+    return scrapper.AppStoreCrawler().search(query=query)
+
 
 def suggest(query):
-    s = scrapper.AppStoreScrapper()
-    return s.suggest(query)
+    return scrapper.AppStoreCrawler().suggest(query=query)
+
 
 def collection(type, category):
-    s = scrapper.AppStoreScrapper()
-    return s.collection(type, category)
+    return scrapper.AppStoreCrawler().collection(type=type, category=category)
+
 
 def similar(app_id):
-    s = scrapper.AppStoreScrapper()
-    return s.similar(app_id)
+    return scrapper.AppStoreCrawler().similar(app_id=app_id)
+
 
 def rating(app_id):
-    s = scrapper.AppStoreScrapper()
-    return s.rating(app_id)
+    return scrapper.AppStoreCrawler().rating(app_id=app_id)
+
 
 def review(app_id):
-    s = scrapper.AppStoreScrapper()
-    return s.review(app_id)
+    return scrapper.AppStoreCrawler().review(app_id=app_id)

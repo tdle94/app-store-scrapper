@@ -54,9 +54,11 @@ REVIEW_KEY = {
   'url'
 }
 
+
 class CrawlerTestBase(unittest.TestCase):
     def setUp(self):
         self.s = AppStoreCrawler()
+
 
 class DetailsTest(CrawlerTestBase):
     def verify(self, app_id, country='us'):
@@ -99,6 +101,7 @@ class DetailsTest(CrawlerTestBase):
     def test_with_invalid_country(self):
         self.verify(553834731, country='hell')
 
+
 class DeveloperTest(CrawlerTestBase):
     def verify(self, app_id, country):
         app_data = self.s.developers(284882218, country=country)
@@ -121,8 +124,6 @@ class DeveloperTest(CrawlerTestBase):
             self.assertFalse(app_data)
             self.assertEqual(0, len(app_data))
 
-
-
     def test_apps_with_dev_id(self):
         for country in constant.markets:
             self.verify(284882218, country=country)
@@ -140,9 +141,8 @@ class SearchTermTest(CrawlerTestBase):
         if limit == len(app_data):
             self.assertEqual(limit, len(app_data))
         elif limit > len(app_data):
-            self.assertTrue(len(app_data), int)
+            self.assertLess(len(app_data), limit)
         else:
-            print(len(app_data), limit)
             self.assertFalse(app_data)
 
     def test_term_with_string(self):
@@ -168,6 +168,7 @@ class SearchTermTest(CrawlerTestBase):
     def test_with_invalid_country(self):
         app_data = self.s.search('panda', limit=2, country='hell')
         self.verify(app_data, len(app_data))
+
 
 class SuggestTest(CrawlerTestBase):
     def verify(self, term, country='us', lang='en-us'):
@@ -400,6 +401,7 @@ class CollectionTest(CrawlerTestBase):
 
         self.verify(app_data)
 
+
 class SimilarTest(CrawlerTestBase):
     def verify(self, app_data):
         for data in app_data:
@@ -435,6 +437,7 @@ class SimilarTest(CrawlerTestBase):
         app_data = self.s.similar(553834731, country='zombieland')
         self.verify(app_data)
 
+
 class RatingTest(CrawlerTestBase):
     def test_rating_with_id(self):
         for country in constant.markets:
@@ -467,6 +470,7 @@ class RatingTest(CrawlerTestBase):
 
         app_data = self.s.rating('com.midasplayer.aasfpps.candycasdfrushsaga', country='heaven')
         self.assertTrue(all(key in app_data for key in RATING_KEYS))
+
 
 class ReviewTest(CrawlerTestBase):
     def review_validation(self, app_id, country='us', page=1, sort='mostRecent'):
