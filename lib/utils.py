@@ -183,8 +183,9 @@ def parse_app_review(result):
         return []
 
     for entry in entries:
-        if entry is not dict:
+        if type(entry) is not dict:
             continue
+
         reviews.append({
             'id': result.get('id').get('label'),
             'userName': result.get('author').get('name').get('label'),

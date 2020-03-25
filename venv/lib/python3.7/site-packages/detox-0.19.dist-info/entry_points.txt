@@ -1,0 +1,6 @@
+[console_scripts]
+detox=detox.cli:main
+
+[tox]
+proclimit = detox.tox_proclimit
+
