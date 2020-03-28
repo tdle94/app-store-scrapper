@@ -3,56 +3,44 @@ from lib import constant
 from lib.scrapper import AppStoreCrawler
 
 DETAIL_KEYS = {
-    'id',
-    'appId',
-    'title',
-    'url',
-    'description',
-    'icon',
-    'genres',
-    'genreIds',
-    'primaryGenre',
-    'primaryGenreId',
-    'contentRating',
-    'languages',
-    'size',
-    'requiredOsVersion',
-    'released',
-    'updated',
-    'releaseNotes',
-    'version',
-    'price',
-    'currency',
-    'free',
-    'developerId',
-    'developer',
-    'developerUrl',
-    'developerWebsite',
-    'score',
-    'reviews',
-    'currentVersionScore',
-    'currentVersionReviews',
-    'screenshots',
-    'ipadScreenshots',
-    'appletvScreenshots',
-    'supportedDevices',
+    "id",
+    "appId",
+    "title",
+    "url",
+    "description",
+    "icon",
+    "genres",
+    "genreIds",
+    "primaryGenre",
+    "primaryGenreId",
+    "contentRating",
+    "languages",
+    "size",
+    "requiredOsVersion",
+    "released",
+    "updated",
+    "releaseNotes",
+    "version",
+    "price",
+    "currency",
+    "free",
+    "developerId",
+    "developer",
+    "developerUrl",
+    "developerWebsite",
+    "score",
+    "reviews",
+    "currentVersionScore",
+    "currentVersionReviews",
+    "screenshots",
+    "ipadScreenshots",
+    "appletvScreenshots",
+    "supportedDevices",
 }
 
-RATING_KEYS = {
-    'rating',
-    'histogram',
-}
+RATING_KEYS = {"rating", "histogram"}
 
-REVIEW_KEY = {
-  'id',
-  'userName',
-  'userUrl',
-  'version',
-  'score',
-  'title',
-  'text',
-  'url'
-}
+REVIEW_KEY = {"id", "userName", "userUrl", "version", "score", "title", "text", "url"}
 
 
 class CrawlerTestBase(unittest.TestCase):
@@ -61,17 +49,17 @@ class CrawlerTestBase(unittest.TestCase):
 
 
 class DetailsTest(CrawlerTestBase):
-    def verify(self, app_id, country='us'):
+    def verify(self, app_id, country="us"):
         app_data = self.s.details(app_id, country)
 
         if app_data:
             app_data = app_data[0]
             self.assertTrue(all(key in app_data for key in DETAIL_KEYS))
             self.assertEqual(len(DETAIL_KEYS), len(app_data.keys()))
-            if app_data.get('id') == app_id:
-                self.assertEqual(app_id, app_data.get('id'))
-            elif app_data.get('appID') == app_id:
-                self.assertEqual(app_id, app_data.get('bundleId'))
+            if app_data.get("id") == app_id:
+                self.assertEqual(app_id, app_data.get("id"))
+            elif app_data.get("appID") == app_id:
+                self.assertEqual(app_id, app_data.get("bundleId"))
             else:
                 pass
         else:
@@ -84,7 +72,7 @@ class DetailsTest(CrawlerTestBase):
 
     def test_detail_market_with_bundle_id(self):
         for country in constant.markets:
-            self.verify('com.midasplayer.apps.candycrushsaga', country=country)
+            self.verify("com.midasplayer.apps.candycrushsaga", country=country)
 
     def test_detail_with_non_existing_id(self):
         for country in constant.markets:
@@ -92,14 +80,14 @@ class DetailsTest(CrawlerTestBase):
 
     def test_detail_with_non_exsiting_bundle_id(self):
         for country in constant.markets:
-            self.verify('com.midasplayer.apps.candycrrew32ushsaga', country=country)
+            self.verify("com.midasplayer.apps.candycrrew32ushsaga", country=country)
 
     def test_detail_with_random_string(self):
         for country in constant.markets:
-            self.verify('random string', country=country)
+            self.verify("random string", country=country)
 
     def test_with_invalid_country(self):
-        self.verify(553834731, country='hell')
+        self.verify(553834731, country="hell")
 
 
 class DeveloperTest(CrawlerTestBase):
@@ -114,10 +102,10 @@ class DeveloperTest(CrawlerTestBase):
             app_data = app_data[0]
             self.assertTrue(all(key in app_data for key in DETAIL_KEYS))
             self.assertEqual(len(DETAIL_KEYS), len(app_data.keys()))
-            if app_data.get('id') == app_id:
-                self.assertEqual(app_id, app_data.get('id'))
-            elif app_data.get('appID') == app_id:
-                self.assertEqual(app_id, app_data.get('bundleId'))
+            if app_data.get("id") == app_id:
+                self.assertEqual(app_id, app_data.get("id"))
+            elif app_data.get("appID") == app_id:
+                self.assertEqual(app_id, app_data.get("bundleId"))
             else:
                 pass
         else:
@@ -129,7 +117,7 @@ class DeveloperTest(CrawlerTestBase):
             self.verify(284882218, country=country)
 
     def test_app_with_invalid_country(self):
-        self.verify(284882218, country='heaven')
+        self.verify(284882218, country="heaven")
 
 
 class SearchTermTest(CrawlerTestBase):
@@ -147,7 +135,7 @@ class SearchTermTest(CrawlerTestBase):
 
     def test_term_with_string(self):
         for country in constant.markets:
-            app_data = self.s.search('panda', limit=10, country=country)
+            app_data = self.s.search("panda", limit=10, country=country)
             self.verify(app_data, 10)
 
     def test_term_with_int(self):
@@ -157,21 +145,21 @@ class SearchTermTest(CrawlerTestBase):
 
     def test_non_existing_term(self):
         for country in constant.markets:
-            app_data = self.s.search('fuckinghell', limit=10, country=country)
+            app_data = self.s.search("fuckinghell", limit=10, country=country)
             self.verify(app_data, 10)
 
     def test_term_with_exceeding_limit(self):
         for country in constant.markets:
-            app_data = self.s.search('panda', limit=50000000, country=country)
+            app_data = self.s.search("panda", limit=50000000, country=country)
             self.verify(app_data, len(app_data))
 
     def test_with_invalid_country(self):
-        app_data = self.s.search('panda', limit=2, country='hell')
+        app_data = self.s.search("panda", limit=2, country="hell")
         self.verify(app_data, len(app_data))
 
 
 class SuggestTest(CrawlerTestBase):
-    def verify(self, term, country='us', lang='en-us'):
+    def verify(self, term, country="us", lang="en-us"):
         terms = self.s.suggest(term, country=country, lang=lang)
         if terms:
             self.assertTrue(terms, list)
@@ -179,19 +167,19 @@ class SuggestTest(CrawlerTestBase):
             self.assertFalse(terms)
 
     def test_non_exist_term(self):
-        terms = self.s.suggest('fuckinghell', 'us', 'en-us')
+        terms = self.s.suggest("fuckinghell", "us", "en-us")
         self.assertFalse(terms)
 
     def test_suggest_with_string(self):
         for country in constant.markets:
-            self.verify('panda', country=country)
+            self.verify("panda", country=country)
 
     def test_suggest_with_int(self):
         for country in constant.markets:
             self.verify(3232, country=country)
 
     def test_with_invalid_country(self):
-        self.verify(3232, country='heaven')
+        self.verify(3232, country="heaven")
 
 
 class CollectionTest(CrawlerTestBase):
@@ -202,67 +190,69 @@ class CollectionTest(CrawlerTestBase):
     def test_with_us_market(self):
         app_data = []
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'us', 50)
+            app_data = self.s.collection("topmacapps", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'us', 50)
+            app_data = self.s.collection("topfreemacapps", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'us', 50)
+            app_data = self.s.collection("topgrossingmacapps", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'us', 50)
+            app_data = self.s.collection("toppaidmacapps", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'us', 50)
+            app_data = self.s.collection("newapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'us', 50)
+            app_data = self.s.collection("newfreeapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'us', 50)
+            app_data = self.s.collection("newpaidapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'us', 50)
+            app_data = self.s.collection("topfreeapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'us', 50)
+            app_data = self.s.collection("topfreeipadapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'us', 50)
+            app_data = self.s.collection("topgrossingapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'us', 50)
+            app_data = self.s.collection(
+                "topgrossingipadapplications", category, "us", 50
+            )
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'us', 50)
+            app_data = self.s.collection("toppaidapplications", category, "us", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'us', 50)
+            app_data = self.s.collection("toppaidipadapplications", category, "us", 50)
 
         self.verify(app_data)
 
@@ -270,134 +260,138 @@ class CollectionTest(CrawlerTestBase):
         app_data = []
 
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'ao', 50)
+            app_data = self.s.collection("topmacapps", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'ao', 50)
+            app_data = self.s.collection("topfreemacapps", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'ao', 50)
+            app_data = self.s.collection("topgrossingmacapps", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'ao', 50)
+            app_data = self.s.collection("toppaidmacapps", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'ao', 50)
+            app_data = self.s.collection("newapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'ao', 50)
+            app_data = self.s.collection("newfreeapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'ao', 50)
+            app_data = self.s.collection("newpaidapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'ao', 50)
+            app_data = self.s.collection("topfreeapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'ao', 50)
+            app_data = self.s.collection("topfreeipadapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'ao', 50)
+            app_data = self.s.collection("topgrossingapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'ao', 50)
+            app_data = self.s.collection(
+                "topgrossingipadapplications", category, "ao", 50
+            )
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'ao', 50)
+            app_data = self.s.collection("toppaidapplications", category, "ao", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'ao', 50)
+            app_data = self.s.collection("toppaidipadapplications", category, "ao", 50)
 
         self.verify(app_data)
 
     def test_with_ai_market(self):
         app_data = []
         for category in constant.category:
-            app_data = self.s.collection('topmacapps', category, 'ai', 50)
+            app_data = self.s.collection("topmacapps", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreemacapps', category, 'ai', 50)
+            app_data = self.s.collection("topfreemacapps", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingmacapps', category, 'ai', 50)
+            app_data = self.s.collection("topgrossingmacapps", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidmacapps', category, 'ai', 50)
+            app_data = self.s.collection("toppaidmacapps", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newapplications', category, 'ai', 50)
+            app_data = self.s.collection("newapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newfreeapplications', category, 'ai', 50)
+            app_data = self.s.collection("newfreeapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('newpaidapplications', category, 'ai', 50)
+            app_data = self.s.collection("newpaidapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeapplications', category, 'ai', 50)
+            app_data = self.s.collection("topfreeapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topfreeipadapplications', category, 'ai', 50)
+            app_data = self.s.collection("topfreeipadapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingapplications', category, 'ai', 50)
+            app_data = self.s.collection("topgrossingapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('topgrossingipadapplications', category, 'ai', 50)
+            app_data = self.s.collection(
+                "topgrossingipadapplications", category, "ai", 50
+            )
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidapplications', category, 'ai', 50)
+            app_data = self.s.collection("toppaidapplications", category, "ai", 50)
 
         self.verify(app_data)
 
         for category in constant.category:
-            app_data = self.s.collection('toppaidipadapplications', category, 'ai', 50)
+            app_data = self.s.collection("toppaidipadapplications", category, "ai", 50)
 
         self.verify(app_data)
 
@@ -415,7 +409,9 @@ class SimilarTest(CrawlerTestBase):
 
     def test_similar_with_bundle_id(self):
         for country in constant.markets:
-            app_data = self.s.similar('com.midasplayer.apps.candycrushsaga', country=country)
+            app_data = self.s.similar(
+                "com.midasplayer.apps.candycrushsaga", country=country
+            )
             self.verify(app_data)
 
     def test_similar_with_non_existing_id(self):
@@ -425,16 +421,18 @@ class SimilarTest(CrawlerTestBase):
 
     def test_similiar_with_non_existing_bundle_id(self):
         for country in constant.markets:
-            app_data = self.s.similar('com.midasplayer.apps.candfewfwecrushsaga', country=country)
+            app_data = self.s.similar(
+                "com.midasplayer.apps.candfewfwecrushsaga", country=country
+            )
             self.verify(app_data)
 
     def test_similiar_with_random_bundle_id(self):
         for country in constant.markets:
-            app_data = self.s.similar('random string', country=country)
+            app_data = self.s.similar("random string", country=country)
             self.verify(app_data)
 
     def test_with_invalid_country(self):
-        app_data = self.s.similar(553834731, country='zombieland')
+        app_data = self.s.similar(553834731, country="zombieland")
         self.verify(app_data)
 
 
@@ -446,7 +444,9 @@ class RatingTest(CrawlerTestBase):
 
     def test_rating_with_bundle_id(self):
         for country in constant.markets:
-            app_data = self.s.rating('com.midasplayer.apps.candycrushsaga', country=country)
+            app_data = self.s.rating(
+                "com.midasplayer.apps.candycrushsaga", country=country
+            )
             self.assertTrue(all(key in app_data for key in RATING_KEYS))
 
     def test_none_exsiting_id(self):
@@ -456,24 +456,28 @@ class RatingTest(CrawlerTestBase):
 
     def test_none_existing_bundle_id(self):
         for country in constant.markets:
-            app_data = self.s.rating('com.midasplayer.aasfpps.candycasdfrushsaga', country=country)
+            app_data = self.s.rating(
+                "com.midasplayer.aasfpps.candycasdfrushsaga", country=country
+            )
             self.assertTrue(all(key in app_data for key in RATING_KEYS))
 
     def test_random_string(self):
         for country in constant.markets:
-            app_data = self.s.rating('random string', country=country)
+            app_data = self.s.rating("random string", country=country)
             self.assertTrue(all(key in app_data for key in RATING_KEYS))
 
     def test_with_invalid_country(self):
-        app_data = self.s.rating('553834731', country='heaven')
+        app_data = self.s.rating("553834731", country="heaven")
         self.assertTrue(all(key in app_data for key in RATING_KEYS))
 
-        app_data = self.s.rating('com.midasplayer.aasfpps.candycasdfrushsaga', country='heaven')
+        app_data = self.s.rating(
+            "com.midasplayer.aasfpps.candycasdfrushsaga", country="heaven"
+        )
         self.assertTrue(all(key in app_data for key in RATING_KEYS))
 
 
 class ReviewTest(CrawlerTestBase):
-    def review_validation(self, app_id, country='us', page=1, sort='mostRecent'):
+    def review_validation(self, app_id, country="us", page=1, sort="mostRecent"):
         app_data = self.s.review(app_id, country=country, page=page, sort=sort)
         for data in app_data:
             self.assertTrue(all(key in data for key in REVIEW_KEY))
@@ -493,11 +497,15 @@ class ReviewTest(CrawlerTestBase):
 
     def test_most_recent_with_bundle_id(self):
         for country in constant.markets:
-            self.review_validation('com.midasplayer.apps.candycrushsaga', country=country)
+            self.review_validation(
+                "com.midasplayer.apps.candycrushsaga", country=country
+            )
 
     def test_most_recent_with_bundle_id_with_exceeding_page(self):
         for country in constant.markets:
-            self.review_validation('com.midasplayer.apps.candycrushsaga', country=country, page=11)
+            self.review_validation(
+                "com.midasplayer.apps.candycrushsaga", country=country, page=11
+            )
 
     def test_most_recent_with_non_existing_id(self):
         for country in constant.markets:
@@ -505,19 +513,25 @@ class ReviewTest(CrawlerTestBase):
 
     def test_most_recent_with_non_existing_bundle_id(self):
         for country in constant.markets:
-            self.review_validation('com.midasplfdsayer.apps.candycrusasdfhsaga', country=country)
+            self.review_validation(
+                "com.midasplfdsayer.apps.candycrusasdfhsaga", country=country
+            )
 
     def test_most_recent_with_random_string(self):
         for country in constant.markets:
-            self.review_validation('random string', country=country)
+            self.review_validation("random string", country=country)
 
     def test_most_helpful_with_id(self):
         for country in constant.markets:
-            self.review_validation(553834731, country=country, sort='mostHelpful')
+            self.review_validation(553834731, country=country, sort="mostHelpful")
 
     def test_most_helpful_with_bundle_id(self):
         for country in constant.markets:
-            self.review_validation('com.midasplayer.apps.candycrushsaga', sort='mostHelpful', country=country)
+            self.review_validation(
+                "com.midasplayer.apps.candycrushsaga",
+                sort="mostHelpful",
+                country=country,
+            )
 
     def test_most_helpful_with_non_existing_id(self):
         for country in constant.markets:
@@ -525,19 +539,23 @@ class ReviewTest(CrawlerTestBase):
 
     def test_most_helpful_with_non_existing_bundle_id(self):
         for country in constant.markets:
-            self.review_validation('com.midasplfdsayer.apps.candycrusasdfhsaga', country=country)
+            self.review_validation(
+                "com.midasplfdsayer.apps.candycrusasdfhsaga", country=country
+            )
 
     def test_most_helpful_with_random_string(self):
         for country in constant.markets:
-            self.review_validation('random string', country=country)
+            self.review_validation("random string", country=country)
 
     def test_id_with_invalid_sort(self):
         for country in constant.markets:
-            self.review_validation(553834731, country=country, sort='latest')
+            self.review_validation(553834731, country=country, sort="latest")
 
     def test_bundle_id_with_invalid_sort(self):
         for country in constant.markets:
-            self.review_validation('com.midasplayer.apps.candycrushsaga', country=country, sort='latest')
+            self.review_validation(
+                "com.midasplayer.apps.candycrushsaga", country=country, sort="latest"
+            )
 
     def test_with_invalid_country(self):
-        self.review_validation(553834731, country='hell', sort='mostHelpful')
+        self.review_validation(553834731, country="hell", sort="mostHelpful")
