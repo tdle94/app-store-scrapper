@@ -10,9 +10,10 @@ install with pip
 ### Usage
 
 - details: Fetch application detail.
-- collection: Fetch a list of applications and their details.
-- developer: Fetch a developer's offered applications.
-- suggestions: Fetch a list of query string suggestions.
 - search: Fetch applications matching a search query.
+- suggest: Fetch a list of query string suggestions.
+- collection: Fetch a list of applications and their details.
 - similar: Fetch an application's similar apps.
-- categories: Fetch a list of available categories.
+- rating: Retrieves the ratings for the app.
+- review: Retrieves a page of reviews for the app.
+
