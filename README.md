@@ -1,13 +1,13 @@
 # app-store-scrapper
 light weight library to scrape data from itune
 
-## Installation
+### Installation
 
 install with pip
 
 ```pip install app-store-scrapper```
 
-## Usage
+### Usage
 
 - details: Fetch application detail.
 - collection: Fetch a list of applications and their details.
