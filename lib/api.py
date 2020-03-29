@@ -5,8 +5,12 @@ def details(app_id, country='us'):
     return scrapper.AppStoreCrawler().details(app_id=app_id, country=country)
 
 
-def search(query, country='us', lang='en-us'):
-    return scrapper.AppStoreCrawler().search(query=query, country=country, lang=lang)
+def search(query, country='us', lang='en-us', limit=10):
+    return scrapper.AppStoreCrawler().search(query=query, country=country, lang=lang, limit=limit)
+
+
+def developer(dev_id, country='us'):
+    return scrapper.AppStoreCrawler().developers(dev_id=dev_id, country=country)
 
 
 def suggest(query, country='us', lang='en-us'):

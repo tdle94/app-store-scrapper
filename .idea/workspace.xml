@@ -9,80 +9,11 @@
       <change afterPath="$PROJECT_DIR$/build/lib/lib/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dist/app-store-scrapper-0.0.1.tar.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dist/app_store_scrapper-0.0.1-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_black_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.10b0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/DESCRIPTION.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec-0.7.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/pathspec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/pattern.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/patterns/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/patterns/gitwildmatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/tests/test_gitwildmatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/tests/test_pathspec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/tests/test_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pathspec/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex-2020.2.20-py3.7.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex-2020.2.20-py3.7.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex-2020.2.20-py3.7.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex-2020.2.20-py3.7.egg-info/installed-files.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex-2020.2.20-py3.7.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex/_regex.cpython-37m-darwin.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex/_regex_core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex/regex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/regex/test_regex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast-1.4.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/_ast27.cpython-37m-darwin.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/_ast3.cpython-37m-darwin.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/ast27.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/ast3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/conversions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/typed_ast/tests/test_basics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black-19.3b0.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/black.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blackd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blackd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/Grammar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/Grammar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/conv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/grammar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/grammar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/literals.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/literals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/pgen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/pgen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pgen2/tokenize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pygram.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pygram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pytree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/blib2to3/pytree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_store_scrapper.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/app_store_scrapper.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yjj6PhcTV0rUESvALwIqV3wQxt" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -150,8 +81,29 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="appstorecrawler" />
+      <module name="app-store-crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -171,8 +123,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_crawler.SearchTermTest.test_term_with_string" type="tests" factoryName="Unittests" nameIsGenerated="true">
-      <module name="appstorecrawler" />
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.test_crawler.SearchTermTest.test_term_with_string" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="app-store-crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -181,12 +144,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_crawler.SearchTermTest.test_term_with_string&quot;" />
+      <option name="_new_target" value="&quot;tests.test_crawler.SearchTermTest.test_term_with_string&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_crawler.SimilarTest" type="tests" factoryName="Unittests" nameIsGenerated="true">
-      <module name="appstorecrawler" />
+    <configuration name="Unittests for tests.test_crawler.SimilarTest" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="app-store-crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -195,27 +158,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_crawler.SimilarTest&quot;" />
+      <option name="_new_target" value="&quot;tests.test_crawler.SimilarTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Makefile.fmt" />
       <item itemvalue="Makefile.build" />
-      <item itemvalue="Python.api" />
-      <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest.test_term_with_string" />
-      <item itemvalue="Python tests.Unittests for test_crawler.SimilarTest" />
+      <item itemvalue="Makefile.clean" />
+      <item itemvalue="Makefile.fmt" />
       <item itemvalue="Makefile.lint" />
       <item itemvalue="Makefile.test" />
-      <item itemvalue="Makefile.clean" />
+      <item itemvalue="Python.api" />
+      <item itemvalue="Python tests.Unittests for tests.test_crawler.SearchTermTest.test_term_with_string" />
+      <item itemvalue="Python tests.Unittests for tests.test_crawler.SimilarTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Makefile.clean" />
         <item itemvalue="Makefile.build" />
+        <item itemvalue="Makefile.clean" />
+        <item itemvalue="Makefile.build" />
         <item itemvalue="Makefile.test" />
-        <item itemvalue="Makefile.lint" />
-        <item itemvalue="Makefile.fmt" />
       </list>
     </recent_temporary>
   </component>
@@ -263,36 +258,36 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="550" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.947@0.23.1680.947" timestamp="1585101385070" />
-    <state width="1358" height="213" key="GridCell.Tab.0.bottom" timestamp="1585431992386">
+    <state width="1358" height="213" key="GridCell.Tab.0.bottom" timestamp="1585446299116">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585431992386" />
-    <state width="1358" height="213" key="GridCell.Tab.0.center" timestamp="1585431992385">
+    <state width="1358" height="213" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
+    <state width="1358" height="213" key="GridCell.Tab.0.center" timestamp="1585446299116">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585431992385" />
-    <state width="1358" height="213" key="GridCell.Tab.0.left" timestamp="1585431992385">
+    <state width="1358" height="213" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
+    <state width="1358" height="213" key="GridCell.Tab.0.left" timestamp="1585446299115">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585431992385" />
-    <state width="1358" height="213" key="GridCell.Tab.0.right" timestamp="1585431992385">
+    <state width="1358" height="213" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585446299115" />
+    <state width="1358" height="213" key="GridCell.Tab.0.right" timestamp="1585446299116">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585431992385" />
-    <state x="174" y="197" key="SettingsEditor" timestamp="1585430774049">
+    <state width="1358" height="213" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
+    <state x="174" y="197" key="SettingsEditor" timestamp="1585445605338">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="617" y="110" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1583871244088" />
-    <state x="174" y="197" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1585430774049" />
-    <state x="517" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585421968091">
+    <state x="174" y="197" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1585445605338" />
+    <state x="517" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585437532799">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584196282757" />
-    <state x="517" y="342" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1585421968091" />
+    <state x="517" y="342" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1585437532799" />
     <state x="572" y="247" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583604299024">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

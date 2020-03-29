@@ -5,7 +5,7 @@ with open('README.md', 'r', 'utf-8') as f:
     readme = f.read()
 
 setup(
-    name='app-store-scrapper',
+    name='appstorescrapper',
     version='0.0.1',
     description='App Store application scrapper',
     long_description=readme,

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/appstorecrawler.iml" filepath="$PROJECT_DIR$/.idea/appstorecrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/app-store-crawler.iml" filepath="$PROJECT_DIR$/.idea/app-store-crawler.iml" />
     </modules>
   </component>
 </project>

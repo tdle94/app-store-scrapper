@@ -1,12 +1,14 @@
 Metadata-Version: 2.1
-Name: app-store-scrapper
+Name: appstorescrapper
 Version: 0.0.1
 Summary: App Store application scrapper
 Home-page: https://github.com/tdle94/app-store-scrapper
 Author: Tuyen Le
 Author-email: tuyendle92@gmail.com
 License: MIT License
-Description: UNKNOWN
+Description: # app-store-scrapper
+        light weight library to scrape data from itune
+        
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers

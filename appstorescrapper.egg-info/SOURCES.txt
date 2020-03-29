@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+appstorescrapper.egg-info/PKG-INFO
+appstorescrapper.egg-info/SOURCES.txt
+appstorescrapper.egg-info/dependency_links.txt
+appstorescrapper.egg-info/requires.txt
+appstorescrapper.egg-info/top_level.txt
+lib/__init__.py
+lib/api.py
+lib/constant.py
+lib/scrapper.py
+lib/utils.py
