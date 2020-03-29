@@ -1,5 +1,5 @@
 # app-store-scrapper
-light weight library to scrape data from itune
+light weight library to scrape data from itune. Inspire by a javascript [version](https://github.com/facundoolano/app-store-scraper)
 
 ## Installation
 
