@@ -17,7 +17,7 @@ install with pip
 - rating: Retrieves the ratings for the app.
 - review: Retrieves a page of reviews for the app.
 
-**app**
+**Details**
 
 Retrieves the full detail of an application. Options:
 
@@ -63,7 +63,7 @@ Retrieves the full detail of an application. Options:
 ]
 ```
 
-**developer**
+**Developer**
 
 Retrieves a list of applications by the give developer id. Options:
 
@@ -156,7 +156,7 @@ Retrieves a list of applications by the give developer id. Options:
 ]
 ```
 
-**search**
+**Search**
 
 Retrieves a list of apps that results of searching by the given term. Options:
 
