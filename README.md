@@ -68,10 +68,10 @@ Retrieves the full detail of an application. Options:
 
 Retrieves a list of apps that results of searching by the given term. Options:
 
-- query: the term to search for (required).
-- limit: the amount of elements to retrieve. Defaults to 10.
-- country: the two letter country code to get the similar apps from. Defaults to us.
-- lang: language code for the result text. Defaults to en-us.
+- ```query```: the term to search for (required).
+- ```limit```: the amount of elements to retrieve. Defaults to 10.
+- ```country```: the two letter country code to get the similar apps from. Defaults to us.
+- ```lang```: language code for the result text. Defaults to en-us.
 
 ```python
 >>> from lib import api
