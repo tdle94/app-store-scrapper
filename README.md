@@ -9,8 +9,9 @@ install with pip
 
 ## Usage
 
-- [details](: Fetch application detail.
-- search: Fetch applications matching a search query.
+- [details](https://github.com/tdle94/app-store-scrapper#details): Fetch application detail.
+- [search](https://github.com/tdle94/app-store-scrapper#search): Fetch applications matching a search query.
+- [developer](https://github.com/tdle94/app-store-scrapper#developer): Retrieve a list of apps given by developer id.
 - suggest: Fetch a list of query string suggestions.
 - collection: Fetch a list of applications and their details.
 - similar: Fetch an application's similar apps.
