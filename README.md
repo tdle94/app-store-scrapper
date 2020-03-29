@@ -5,7 +5,7 @@ light weight library to scrape data from itune
 
 install with pip
 
-```pip install app-store-scrapper```
+```pip install appstorescrapper```
 
 ## Usage
 
