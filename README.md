@@ -27,8 +27,8 @@ Retrieves the full detail of an application. Options:
   - ```ratings```: load additional ratings information like ratings number and histogram
   
 ```python
->>> from lib import scrapper
->>> scrapper.AppStoreCrawler().details(553834731, 'us')
+>>> from lib import api
+>>> api.details(553834731)
 [
   {
     'id': 553834731,
@@ -63,3 +63,90 @@ Retrieves the full detail of an application. Options:
   }
 ]
 ```
+
+**search**
+
+Retrieves a list of apps that results of searching by the given term. Options:
+
+- query: the term to search for (required).
+- limit: the amount of elements to retrieve. Defaults to 10.
+- country: the two letter country code to get the similar apps from. Defaults to us.
+- lang: language code for the result text. Defaults to en-us.
+
+```python
+>>> from lib import api
+>>> api.search('panda', limit=2)
+[
+  {
+    'id': 903990394,
+    'appId': 'com.pandarg.pxmobileapp',
+    'title': None,
+    'url': 'https://apps.apple.com/us/app/panda-express/id903990394?uo=4',
+    'description': 'Satisfying your Orange Chicken craving just got easier with the new Panda Express app. Order ahead, find your nearest location and set your preferences. Bonus: Running late? Just let us know through the app and your order will be hot when you’re ready for it.',
+    'icon': 'https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/88/1d/a3/881da39f-1bd2-4773-9762-ece2791ef62b/source/512x512bb.jpg',
+    'genres': ['Food & Drink'],
+    'genreIds': ['6023'],
+    'primaryGenre': 'Food & Drink',
+    'primaryGenreId': 6023,
+    'contentRating': '4+',
+    'languages': None,
+    'size': '105432064',
+    'requiredOsVersion': '10.0',
+    'released': None,
+    'updated': '2020-03-24T16:48:41Z',
+    'releaseNotes': 'Displays limit of two family meals per order.',
+    'version': '2.14',
+    'price': 0.0,
+    'currency': 'USD',
+    'free': True,
+    'developerId': 903990397,
+    'developer': 'Panda Express',
+    'developerUrl': 'https://apps.apple.com/us/developer/panda-express/id903990397?uo=4',
+    'developerWebsite': 'https://www.pandaexpress.com',
+    'score': 4.59747,
+    'reviews': 35582,
+    'currentVersionScore': 4.59747,
+    'currentVersionReviews': 35582,
+    'screenshots': None,
+    'ipadScreenshots': [],
+    'appletvScreenshots': [],
+    'supportedDevices': ['iPhone7Plus-iPhone7Plus', 'iPad611-iPad611', 'iPadMini4Cellular-iPadMini4Cellular', 'iPad72-iPad72', 'iPad74-iPad74', 'iPadAir3-iPadAir3', 'iPhoneXSMax-iPhoneXSMax', 'iPadPro97Cellular-iPadPro97Cellular', 'iPhone5s-iPhone5s', 'iPad71-iPad71', 'iPadAir2Cellular-iPadAir2Cellular', 'iPad856-iPad856', 'iPadMini5-iPadMini5', 'iPhone5c-iPhone5c', 'iPadFourthGen4G-iPadFourthGen4G', 'iPadMini3Cellular-iPadMini3Cellular', 'iPadMini3-iPadMini3', 'iPhoneSE-iPhoneSE', 'iPhoneXR-iPhoneXR', 'iPadProCellular-iPadProCellular', 'iPadFourthGen-iPadFourthGen', 'iPadAir3Cellular-iPadAir3Cellular', 'iPhone11-iPhone11', 'iPad76-iPad76', 'iPad612-iPad612', 'iPadPro-iPadPro', 'iPodTouchSixthGen-iPodTouchSixthGen', 'iPad834-iPad834', 'iPad75-iPad75', 'iPadSeventhGenCellular-iPadSeventhGenCellular', 'iPadSeventhGen-iPadSeventhGen', 'iPadAir2-iPadAir2', 'iPadMini5Cellular-iPadMini5Cellular', 'iPhone5-iPhone5', 'iPad878-iPad878', 'iPad73-iPad73', 'iPhone6Plus-iPhone6Plus', 'iPadPro97-iPadPro97', 'iPadMiniRetina-iPadMiniRetina', 'iPhone11ProMax-iPhone11ProMax', 'iPodTouchSeventhGen-iPodTouchSeventhGen', 'iPhoneXS-iPhoneXS', 'iPhone6s-iPhone6s', 'iPhone8Plus-iPhone8Plus', 'iPhone8-iPhone8', 'iPhone6-iPhone6', 'iPadAirCellular-iPadAirCellular', 'iPhone6sPlus-iPhone6sPlus', 'iPadMiniRetinaCellular-iPadMiniRetinaCellular', 'iPhone11Pro-iPhone11Pro', 'iPhoneX-iPhoneX', 'iPadAir-iPadAir', 'iPhone7-iPhone7', 'iPadMini4-iPadMini4', 'iPad812-iPad812']},
+    {
+      'id': 1250583288,
+      'appId': 'com.pandaaf.app',
+      'title': None,
+      'url': 'https://apps.apple.com/us/app/panda/id1250583288?uo=4',
+      'description': 'Panda is a new kind of TV show starring you and your friends. Record and watch new episodes together each week until the season is over.\n\nCreate an avatar, invite friends, record scenes, and start watching your show now!\n\nNeed help?\nReach out to us anytime on Twitter @pandastartup or feedback@panda.af',
+      'icon': 'https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/f6/40/5a/f6405a90-f8e0-80ce-2490-4d2f48d77dff/source/512x512bb.jpg',
+      'genres': ['Entertainment', 'Photo & Video'],
+      'genreIds': ['6016', '6008'],
+      'primaryGenre': 'Entertainment',
+      'primaryGenreId': 6016,
+      'contentRating': '12+',
+      'languages': None,
+      'size': '155659264',
+      'requiredOsVersion': '12.0',
+      'released': None,
+      'updated': '2020-02-13T15:16:29Z',
+      'releaseNotes': "2.1.2 fixes pesky bugs!\n\n-Fixed issues around downloading episodes \n-Fixed characters not loading into scenes at times\n-Fixed bugs around account creation\n-Fixed various bugs around sending and receiving invites\n-Fixed audio playing out of speakers when using AirPods\n-Fixed the disappearing progress bar bug\n-Reshooting your lines is a smoother process now\n-There is now the ability to download videos! Easier to share your best moments (and more to come soon)\n\nLong video processing times are being fixed in the following update.\n\nWe've got a ton more fixes and features coming soon.\n\nStay tuned for new episodes every friday!",
+      'version': '2.1.2',
+      'price': 0.0,
+      'currency': 'USD',
+      'free': True,
+      'developerId': 1250583287,
+      'developer': 'Panda Squad',
+      'developerUrl': 'https://apps.apple.com/us/developer/panda-squad/id1250583287?uo=4',
+      'developerWebsite': 'https://panda.af',
+      'score': 3.58962,
+      'reviews': 212,
+      'currentVersionScore': 3.58962,
+      'currentVersionReviews': 212,
+      'screenshots': None,
+      'ipadScreenshots': [],
+      'appletvScreenshots': [],
+      'supportedDevices': ['iPhone7Plus-iPhone7Plus', 'iPad611-iPad611', 'iPadMini4Cellular-iPadMini4Cellular', 'iPad72-iPad72', 'iPad74-iPad74', 'iPadAir3-iPadAir3', 'iPhoneXSMax-iPhoneXSMax', 'iPadPro97Cellular-iPadPro97Cellular', 'iPhone5s-iPhone5s', 'iPad71-iPad71', 'iPadAir2Cellular-iPadAir2Cellular', 'iPad856-iPad856', 'iPadMini5-iPadMini5', 'iPadMini3Cellular-iPadMini3Cellular', 'iPadMini3-iPadMini3', 'iPhoneSE-iPhoneSE', 'iPhoneXR-iPhoneXR', 'iPadProCellular-iPadProCellular', 'iPadAir3Cellular-iPadAir3Cellular', 'iPhone11-iPhone11', 'iPad76-iPad76', 'iPad612-iPad612', 'iPadPro-iPadPro', 'iPodTouchSixthGen-iPodTouchSixthGen', 'iPad834-iPad834', 'iPad75-iPad75', 'iPadSeventhGenCellular-iPadSeventhGenCellular', 'iPadSeventhGen-iPadSeventhGen', 'iPadAir2-iPadAir2', 'iPadMini5Cellular-iPadMini5Cellular', 'iPad878-iPad878', 'iPad73-iPad73', 'iPhone6Plus-iPhone6Plus', 'iPadPro97-iPadPro97', 'iPadMiniRetina-iPadMiniRetina', 'iPhone11ProMax-iPhone11ProMax', 'iPodTouchSeventhGen-iPodTouchSeventhGen', 'iPhoneXS-iPhoneXS', 'iPhone6s-iPhone6s', 'iPhone8Plus-iPhone8Plus', 'iPhone8-iPhone8', 'iPhone6-iPhone6', 'iPadAirCellular-iPadAirCellular', 'iPhone6sPlus-iPhone6sPlus', 'iPadMiniRetinaCellular-iPadMiniRetinaCellular', 'iPhone11Pro-iPhone11Pro', 'iPhoneX-iPhoneX', 'iPadAir-iPadAir', 'iPhone7-iPhone7', 'iPadMini4-iPadMini4', 'iPad812-iPad812']
+  }
+]
+```
+
+
