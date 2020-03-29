@@ -21,10 +21,9 @@ install with pip
 
 Retrieves the full detail of an application. Options:
 
-  - ```id```: the iTunes "trackId" of the app, for example ```553834731``` for Candy Crush Saga. Either this or the ```appId``` should be provided.
-  - ```appId```: the iTunes "bundleId" of the app, for example com.midasplayer.apps.candycrushsaga for Candy Crush Saga. Either this or the id should be provided.
+  - ```id```: the iTunes "trackId" of the app, for example ```553834731``` for Candy Crush Saga. Either this or the ```app_id``` should be provided.
+  - ```app_id```: the iTunes "bundleId" of the app, for example com.midasplayer.apps.candycrushsaga for Candy Crush Saga. Either this or the id should be provided.
   - ```country```: the two letter country code to get the app details from. Defaults to us. Note this also affects the language of the data.
-  - ```ratings```: load additional ratings information like ratings number and histogram
   
 ```python
 >>> from lib import api
@@ -61,6 +60,99 @@ Retrieves the full detail of an application. Options:
     'appletvScreenshots': [],
     'supportedDevices': ['iPad2Wifi-iPad2Wifi', 'iPadAir2-iPadAir2', 'iPadMiniRetinaCellular-iPadMiniRetinaCellular', 'iPadAir2Cellular-iPadAir2Cellular', 'iPhone11ProMax-iPhone11ProMax', 'iPad878-iPad878', 'iPodTouchSeventhGen-iPodTouchSeventhGen', 'iPadMini-iPadMini', 'iPad73-iPad73', 'iPodTouchFifthGen-iPodTouchFifthGen', 'iPhone6sPlus-iPhone6sPlus', 'iPad834-iPad834', 'iPadMini3Cellular-iPadMini3Cellular', 'iPadPro97-iPadPro97', 'iPadThirdGen-iPadThirdGen', 'iPadProCellular-iPadProCellular', 'iPadAir-iPadAir', 'iPhoneSE-iPhoneSE', 'iPadMini4G-iPadMini4G', 'iPhone5c-iPhone5c', 'iPadAir3-iPadAir3', 'iPhone8-iPhone8', 'iPadMini4Cellular-iPadMini4Cellular', 'iPhone7-iPhone7', 'iPhoneXR-iPhoneXR', 'iPadAir3Cellular-iPadAir3Cellular', 'iPad856-iPad856', 'iPhone11Pro-iPhone11Pro', 'iPhone5-iPhone5', 'iPhone11-iPhone11', 'iPadPro97Cellular-iPadPro97Cellular', 'iPad75-iPad75', 'iPhoneXSMax-iPhoneXSMax', 'iPhone5s-iPhone5s', 'iPhone7Plus-iPhone7Plus', 'iPadMini3-iPadMini3', 'iPhone4S-iPhone4S', 'iPadSeventhGenCellular-iPadSeventhGenCellular', 'iPadFourthGen-iPadFourthGen', 'iPadFourthGen4G-iPadFourthGen4G', 'iPhone8Plus-iPhone8Plus', 'iPad23G-iPad23G', 'iPadMini5-iPadMini5', 'iPad71-iPad71', 'iPhoneX-iPhoneX', 'iPadMini4-iPadMini4', 'iPodTouchSixthGen-iPodTouchSixthGen', 'iPad74-iPad74', 'iPhoneXS-iPhoneXS', 'iPad812-iPad812', 'iPadPro-iPadPro', 'iPadMini5Cellular-iPadMini5Cellular', 'iPadThirdGen4G-iPadThirdGen4G', 'iPadAirCellular-iPadAirCellular', 'iPhone6s-iPhone6s', 'iPadSeventhGen-iPadSeventhGen', 'iPad72-iPad72', 'iPhone6-iPhone6', 'iPhone6Plus-iPhone6Plus', 'iPad612-iPad612', 'iPadMiniRetina-iPadMiniRetina', 'iPad611-iPad611', 'iPad76-iPad76']
   }
+]
+```
+
+**developer**
+
+Retrieves a list of applications by the give developer id. Options:
+
+  - ```dev_id```: the iTunes "artistId" of the developer, for example 284882218 for Facebook.
+  - ```country```: the two letter country code to get the app details from. Defaults to us. Note this also affects the language of the data.
+  
+```python
+>>> from lib import api
+>>> api.developer(284882218)
+[
+   {
+      "id":"None",
+      "appId":"None",
+      "title":"None",
+      "url":"None",
+      "description":"None",
+      "icon":"None",
+      "genres":"None",
+      "genreIds":"None",
+      "primaryGenre":"None",
+      "primaryGenreId":"None",
+      "contentRating":"None",
+      "languages":"None",
+      "size":"None",
+      "requiredOsVersion":"None",
+      "released":"None",
+      "updated":"None",
+      "releaseNotes":"None",
+      "version":"None",
+      "price":"None",
+      "currency":"None",
+      "free":False,
+      "developerId":284882218,
+      "developer":"Facebook, Inc.",
+      "developerUrl":"None",
+      "developerWebsite":"None",
+      "score":"None",
+      "reviews":"None",
+      "currentVersionScore":"None",
+      "currentVersionReviews":"None",
+      "screenshots":"None",
+      "ipadScreenshots":"None",
+      "appletvScreenshots":"None",
+      "supportedDevices":"None"
+   },
+   {
+      "id":284882215,
+      "appId":"com.facebook.Facebook",
+      "title":"None",
+      "url":"https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+      "description":"Connect with friends, family and people who share the same interests as you. Communicate privately, watch your favorite content, buy and sell items or just spend time with your community. On Facebook, keeping up with the people who matter most is easy. Discover, enjoy and do more together.\n  \nStay up to date with your loved ones:\n  • Share what's on your mind, announce major life events through posts and celebrate the everyday moments with Stories.\n  • Express yourself through your profile and posts, watch, react, interact and stay in touch with your friends, throughout\n  the day.\n\nConnect with people who share your interests with Groups:\n  • With tens of millions of groups, you'll find something for all your interests and discover more groups relevant to you.\n  • Use the Groups tab as a hub to quickly access all your groups content. Find relevant groups based on your interests with the new discovery tool and recommendations.\n\nBecome more involved with your community:\n  • Discover events happening near you, businesses to support, local groups and activities to be part of.\n  • Check out local recommendations from your friends, then coordinate with them and make plans to get together.\n  • Raise funds for a cause that’s important to you, mentor someone who wants help achieving their goals and, in the event of a local crisis, connect with other people to find or give supplies, food or shelter.\n\nEnjoy entertainment together with Watch:\n  • Discover all kinds of content from original shows to creators to trending videos in topics like beauty, sports, and entertainment.\n  • Join conversations, share with others, interact with viewers and creators and watch together like never before.\n\nBuy and sell with Marketplace:\n  • Whether it's an everyday or one-of-a-kind item, you can discover everything from household items to your next car or apartment on Marketplace.\n  • List your own item for sale and conveniently communicate with buyers and sellers through Messenger \n\nRead our Data Use Policy, Terms and other important info in the legal section of our App Store description. \n\nContinued use of GPS running in the background can dramatically decrease battery life. Facebook doesn't run GPS in the background unless you give us permission by turning on optional features that require this.",
+      "icon":"https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/e5/d6/79/e5d6794b-09ca-5c9d-3e26-72229f41775c/source/512x512bb.jpg",
+      "genres":[
+         "Social Networking"
+      ],
+      "genreIds":[
+         "6005"
+      ],
+      "primaryGenre":"Social Networking",
+      "primaryGenreId":6005,
+      "contentRating":"12+",
+      "languages":"None",
+      "size":"410391552",
+      "requiredOsVersion":"10.0",
+      "released":"None",
+      "updated":"2020-03-26T16:01:04Z",
+      "releaseNotes":"We update the app regularly so we can make it better for you. Get the latest version for all of the available Facebook features. This version includes several bug fixes and performance improvements.",
+      "version":"263.0",
+      "price":0.0,
+      "currency":"USD",
+      "free":True,
+      "developerId":284882218,
+      "developer":"Facebook, Inc.",
+      "developerUrl":"https://apps.apple.com/us/developer/facebook-inc/id284882218?uo=4",
+      "developerWebsite":"http://www.facebook.com/mobile",
+      "score":3.12285,
+      "reviews":419213,
+      "currentVersionScore":3.12285,
+      "currentVersionReviews":419213,
+      "screenshots":"None",
+      "ipadScreenshots":[
+         "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/a2/ff/e2/a2ffe2cd-22f0-fdd9-0dbb-58a3d5bc1c23/mzl.ghlgunye.png/576x768bb.png",
+         "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/90/9c/36/909c363a-a230-f747-1e6d-bda15a1f19c3/mzl.ouqckawq.png/552x414bb.png",
+         "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/49/8e/3f/498e3fa7-19e9-93df-e5ba-8c549747a921/mzl.xbivmonc.png/576x768bb.png"
+      ],
+      "appletvScreenshots":[],
+      "supportedDevices":[ "iPadMini3-iPadMini3", "iPhone7-iPhone7", "iPad76-iPad76", "iPadFourthGen4G-iPadFourthGen4G", "iPadMiniRetina-iPadMiniRetina", "iPad878-iPad878", "iPadAir2-iPadAir2", "iPadPro-iPadPro", "iPad75-iPad75", "iPhone6s-iPhone6s", "iPhoneX-iPhoneX", "iPhone6-iPhone6", "iPhoneXR-iPhoneXR", "iPhone5-iPhone5", "iPadMini4-iPadMini4", "iPadSeventhGen-iPadSeventhGen", "iPadAir2Cellular-iPadAir2Cellular", "iPhoneSE-iPhoneSE", "iPadMini4Cellular-iPadMini4Cellular", "iPad611-iPad611", "iPad856-iPad856", "iPhoneXSMax-iPhoneXSMax", "Watch4-Watch4", "iPodTouchSixthGen-iPodTouchSixthGen", "iPadFourthGen-iPadFourthGen", "iPhoneXS-iPhoneXS", "Watch5-Watch5", "iPadProCellular-iPadProCellular", "iPhone11-iPhone11", "iPhone6sPlus-iPhone6sPlus", "iPadAirCellular-iPadAirCellular", "iPhone11ProMax-iPhone11ProMax", "iPad812-iPad812", "iPad72-iPad72", "iPad834-iPad834", "iPadMini5Cellular-iPadMini5Cellular", "iPadAir3Cellular-iPadAir3Cellular", "iPad612-iPad612", "iPhone8-iPhone8", "iPadPro97-iPadPro97", "iPadMini5-iPadMini5", "iPhone8Plus-iPhone8Plus", "iPhone5s-iPhone5s", "iPad73-iPad73", "iPhone5c-iPhone5c", "iPad71-iPad71", "iPadAir3-iPadAir3","iPhone11Pro-iPhone11Pro", "iPhone7Plus-iPhone7Plus", "iPodTouchSeventhGen-iPodTouchSeventhGen", "iPadMini3Cellular-iPadMini3Cellular", "iPadSeventhGenCellular-iPadSeventhGenCellular", "iPadPro97Cellular-iPadPro97Cellular", "iPhone6Plus-iPhone6Plus", "iPadMiniRetinaCellular-iPadMiniRetinaCellular", "iPad74-iPad74", "iPadAir-iPadAir"]
+   },
+   ...
 ]
 ```
 
