@@ -9,7 +9,7 @@ install with pip
 
 ## Usage
 
-- details: Fetch application detail.
+- [details](: Fetch application detail.
 - search: Fetch applications matching a search query.
 - suggest: Fetch a list of query string suggestions.
 - collection: Fetch a list of applications and their details.
@@ -17,7 +17,7 @@ install with pip
 - rating: Retrieves the ratings for the app.
 - review: Retrieves a page of reviews for the app.
 
-**Details**
+#### details
 
 Retrieves the full detail of an application. Options:
 
@@ -63,7 +63,7 @@ Retrieves the full detail of an application. Options:
 ]
 ```
 
-**Developer**
+#### developer
 
 Retrieves a list of applications by the give developer id. Options:
 
@@ -156,7 +156,7 @@ Retrieves a list of applications by the give developer id. Options:
 ]
 ```
 
-**Search**
+#### search
 
 Retrieves a list of apps that results of searching by the given term. Options:
 
