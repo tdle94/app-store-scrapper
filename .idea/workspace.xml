@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9822e46-f70b-4080-bcaa-54bdd7716f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/lib/lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/lib/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/lib/constant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/lib/scrapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/lib/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/app-store-scrapper-0.0.1.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/app_store_scrapper-0.0.1-py2.py3-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_store_scrapper.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/app_store_scrapper.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_crawler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,33 +40,9 @@
       <recent name="$PROJECT_DIR$/app_store_crawler" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile.clean">
-    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for test_crawler.SearchTermTest">
     <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="clean" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="fmt" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="fmt" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="lint" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="test" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -132,6 +98,62 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.DetailsTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DetailsTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.DeveloperTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.DeveloperTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.SearchTermTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SearchTermTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_crawler.SuggestTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="app-store-crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_crawler.SuggestTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for tests.test_crawler.SearchTermTest.test_term_with_string" type="tests" factoryName="Unittests" nameIsGenerated="true">
@@ -195,22 +217,22 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Makefile.build" />
       <item itemvalue="Makefile.clean" />
-      <item itemvalue="Makefile.fmt" />
-      <item itemvalue="Makefile.lint" />
-      <item itemvalue="Makefile.test" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python tests.Unittests for tests.test_crawler.SearchTermTest.test_term_with_string" />
       <item itemvalue="Python tests.Unittests for tests.test_crawler.SimilarTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DetailsTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest" />
+      <item itemvalue="Python tests.Unittests for test_crawler.SuggestTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_crawler.SearchTermTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.SuggestTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.DeveloperTest" />
+        <item itemvalue="Python tests.Unittests for test_crawler.DetailsTest" />
         <item itemvalue="Makefile.clean" />
-        <item itemvalue="Makefile.build" />
-        <item itemvalue="Makefile.clean" />
-        <item itemvalue="Makefile.build" />
-        <item itemvalue="Makefile.test" />
       </list>
     </recent_temporary>
   </component>
@@ -258,26 +280,26 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="550" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.947@0.23.1680.947" timestamp="1585101385070" />
-    <state width="1358" height="213" key="GridCell.Tab.0.bottom" timestamp="1585446299116">
+    <state width="1358" height="225" key="GridCell.Tab.0.bottom" timestamp="1585451157639">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
-    <state width="1358" height="213" key="GridCell.Tab.0.center" timestamp="1585446299116">
+    <state width="1358" height="225" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585451157639" />
+    <state width="1358" height="225" key="GridCell.Tab.0.center" timestamp="1585451157638">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
-    <state width="1358" height="213" key="GridCell.Tab.0.left" timestamp="1585446299115">
+    <state width="1358" height="225" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585451157638" />
+    <state width="1358" height="225" key="GridCell.Tab.0.left" timestamp="1585451157638">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585446299115" />
-    <state width="1358" height="213" key="GridCell.Tab.0.right" timestamp="1585446299116">
+    <state width="1358" height="225" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585451157638" />
+    <state width="1358" height="225" key="GridCell.Tab.0.right" timestamp="1585451157639">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1379" height="165" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1584156875306" />
-    <state width="1358" height="213" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585446299116" />
+    <state width="1358" height="225" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585451157639" />
     <state x="174" y="197" key="SettingsEditor" timestamp="1585445605338">
       <screen x="0" y="23" width="1680" height="947" />
     </state>

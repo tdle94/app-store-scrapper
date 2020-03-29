@@ -135,26 +135,26 @@ class SearchTermTest(CrawlerTestBase):
 
     def test_term_with_string(self):
         for country in constant.markets:
-            app_data = self.s.search("panda", limit=10, country=country)
+            app_data = self.s.search("panda", limit=10, country=country, lang='us')
             self.verify(app_data, 10)
 
     def test_term_with_int(self):
         for country in constant.markets:
-            app_data = self.s.search(323, limit=10, country=country)
+            app_data = self.s.search(323, limit=10, country=country, lang='us')
             self.verify(app_data, 10)
 
     def test_non_existing_term(self):
         for country in constant.markets:
-            app_data = self.s.search("fuckinghell", limit=10, country=country)
+            app_data = self.s.search("fuckinghell", limit=10, country=country, lang='us')
             self.verify(app_data, 10)
 
     def test_term_with_exceeding_limit(self):
         for country in constant.markets:
-            app_data = self.s.search("panda", limit=50000000, country=country)
+            app_data = self.s.search("panda", limit=50000000, country=country, lang='us')
             self.verify(app_data, len(app_data))
 
     def test_with_invalid_country(self):
-        app_data = self.s.search("panda", limit=2, country="hell")
+        app_data = self.s.search("panda", limit=2, country="hell", lang='us')
         self.verify(app_data, len(app_data))
 
 
