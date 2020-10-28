@@ -4,7 +4,7 @@ beautifulsoup4==4.8.2
 certifi==2019.11.28
 cffi==1.12.3
 chardet==3.0.4
-cryptography==2.8
+cryptography==3.2
 enum34==1.1.10
 futures==3.3.0;python_version<"2.7"
 idna==2.9
